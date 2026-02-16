@@ -1,4 +1,3 @@
-﻿# Ensure the script is running with Administrator privileges
 if (!([Security.Principal.WindowsPrincipal][Security.Principal.WindowsIdentity]::GetCurrent()).IsInRole([Security.Principal.WindowsBuiltInRole]"Administrator")) {
     Write-Warning "This script requires Administrator privileges to register system-wide tasks."
     break
@@ -66,5 +65,6 @@ try {
 catch {
     Write-Error "Failed to register task. Error details: $_"
 }
+
 
 Stop-Transcript
