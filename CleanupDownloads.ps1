@@ -18,8 +18,8 @@ Start-Transcript -Path $LogFile -Append
 
 # Configure Variables
 $TaskName = "CleanupDownloadsFolders"
-$TaskDesc = "Deletes contents of all users' Downloads folders daily at 5:00 PM."
-$ExecuteTime = "17:00"
+$TaskDesc = "Deletes contents of all users' Downloads folders daily at 8:00 PM."
+$ExecuteTime = "20:00"
 
 # --- The Cleanup Command ---
 
@@ -68,3 +68,4 @@ catch {
 
 
 Stop-Transcript
+
